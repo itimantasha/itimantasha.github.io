@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MAN-RA — AI Engineer & Builder</title>
+<title>MAN-RA — GenAI & Full-Stack AI Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
@@ -100,7 +100,6 @@ section{padding:8rem 0;position:relative;}
 .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--teal));transform:scaleX(0);transition:transform 0.3s;}
 .stat-card:hover::before{transform:scaleX(1);}
 .stat-card:hover{border-color:rgba(124,58,237,0.3);transform:translateY(-4px);}
-.about-stats .stat-card:last-child{grid-column:1 / -1;}
 .stat-number{font-family:'Cinzel Decorative',serif;font-size:2.2rem;color:var(--gold);display:block;}
 .stat-label{font-family:'JetBrains Mono',monospace;font-size:0.55rem;color:var(--text-dim);letter-spacing:0.2em;text-transform:uppercase;margin-top:0.3rem;display:block;}
 
@@ -306,6 +305,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <li><a href="#about">About</a></li>
     <li><a href="#personal-projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -317,9 +317,9 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <section id="hero">
   <canvas id="three-canvas"></canvas>
   <div class="hero-content">
-    <div class="hero-eyebrow">✦ Computer Science & Engineering &nbsp;·&nbsp; B.Tech III Year &nbsp;·&nbsp; 2025–26 ✦</div>
+    <div class="hero-eyebrow">✦ Computer Science & Engineering &nbsp;·&nbsp; B.Tech &nbsp;·&nbsp; Batch 2027 &nbsp;·&nbsp; PSIT Kanpur ✦</div>
     <h1 class="hero-name">MAN-RA</h1>
-    <div class="hero-dash"><span></span><em>AI Engineer · Builder · Creator</em><span></span></div>
+    <div class="hero-dash"><span></span><em>GenAI &amp; Full-Stack AI Developer</em><span></span></div>
     <p class="hero-subtitle"><span id="typewriter"></span><span class="cursor-blink">_</span></p>
     <div class="hero-cta">
       <a href="#personal-projects" class="btn-primary">View My Work</a>
@@ -340,18 +340,19 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="about-grid">
       <div class="about-text reveal">
         <h3>Hello, I'm Man-Ra</h3>
-        <p>A third-year Computer Science engineer with one obsession: building AI systems that actually do things. While most people are learning about GenAI, I'm shipping it — from predicting antibiotic resistance using raw genomic sequences, to building agentic networks that reshape live traffic, to creating an AI study companion that turns any YouTube video into a structured learning experience.</p>
-        <p>My stack lives at the frontier — LangChain, LangGraph, RAG pipelines, Vector DBs, n8n automation, FastAPI backends. I don't just use AI tools; I wire them together into systems that think, plan, and execute autonomously.</p>
-        <p>Currently in my third year at B.Tech CSE, actively seeking internships where I can build things that matter.</p>
+        <p>A B.Tech CSE student (Batch 2027) at PSIT Kanpur with a strong AI/ML and GenAI foundation and a habit of shipping end-to-end systems — from predicting antibiotic resistance directly from raw genomic sequences, to ParaFlow AI, an LLM-powered text orchestration platform, to DevCollab, a freelancer-client collaboration platform I'm building right now.</p>
+        <p>My stack spans Python, FastAPI, Next.js, PostgreSQL, Supabase, Redis and Docker, with LLM integrations through the OpenAI API and Gemini. I care about the full path from model to product — REST APIs, authentication, caching, payments and deployment — not just the notebook.</p>
+        <p>Preparing for campus placements 2027 and open to SDE and AI/ML roles where I can build things that matter.</p>
         <div class="about-links">
           <a href="https://www.linkedin.com/in/man-ra-275ab93a6/" target="_blank" class="about-link">LinkedIn</a>
-          <a href="https://github.com/man-ra" target="_blank" class="about-link">GitHub</a>
-          <a href="https://leetcode.com/u/yMkHzy7kCS/" target="_blank" class="about-link">LeetCode</a>
+          <a href="https://github.com/itimantasha" target="_blank" class="about-link">GitHub</a>
+          <a href="https://leetcode.com/u/itimantasha/" target="_blank" class="about-link">LeetCode</a>
         </div>
       </div>
       <div class="about-stats reveal rd2">
         <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">Personal Projects</span></div>
-        <div class="stat-card"><span class="stat-number">3rd</span><span class="stat-label">Year B.Tech CSE</span></div>
+        <div class="stat-card"><span class="stat-number">2027</span><span class="stat-label">B.Tech CSE Batch</span></div>
+        <div class="stat-card"><span class="stat-number">4</span><span class="stat-label">Certifications</span></div>
         <div class="stat-card"><span class="stat-number">GenAI</span><span class="stat-label">Core Focus</span></div>
       </div>
     </div>
@@ -374,20 +375,20 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         <span class="project-number">01</span>
         <div class="project-tag">Bioinformatics · Deep Learning</div>
         <h3 class="project-title">Antibiotic Resistance Prediction via Pathogen DNA</h3>
-        <p class="project-desc">A BLT-CNN pipeline that reads raw pathogen genomic sequences and predicts antibiotic resistance — cutting diagnosis time from 72 hours to seconds.</p>
+        <p class="project-desc">A BLT-CNN pipeline that reads raw pathogen DNA sequences and predicts antibiotic resistance across 3 antibiotic classes — 93.34% accuracy, replacing 24–72 hour culture tests.</p>
         <div class="project-stack">
-          <span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT</span><span class="stack-tag">Scikit-learn</span>
+          <span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">TensorFlow</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT</span>
         </div>
         <div class="project-arrow"><span>Explore Project</span><span>→</span></div>
       </a>
 
       <a class="project-card reveal rd1" href="#" onclick="openProject('p2',event);return false;">
         <span class="project-number">02</span>
-        <div class="project-tag">Networking · GenAI · Agentic AI</div>
-        <h3 class="project-title">Adaptive Traffic Shaping via Real-Time Network Anomaly Detection</h3>
-        <p class="project-desc">A GenAI-powered network layer that detects anomalies in live traffic using LangChain agents and autonomously reshapes bandwidth — networks that heal themselves.</p>
+        <div class="project-tag">GenAI · Full-Stack · SaaS</div>
+        <h3 class="project-title">ParaFlow AI: End-to-End IntelliScribe Text Orchestration System</h3>
+        <p class="project-desc">An LLM-powered writing platform: 5,000+ character prompts for writing, rewriting, summarization, translation and grammar correction — generated in 2–10 seconds with persistent user history.</p>
         <div class="project-stack">
-          <span class="stack-tag">Python</span><span class="stack-tag">LangChain</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Scapy</span><span class="stack-tag">VectorDB</span>
+          <span class="stack-tag">FastAPI</span><span class="stack-tag">Next.js</span><span class="stack-tag">OpenAI API</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">Redis</span><span class="stack-tag">Docker</span>
         </div>
         <div class="project-arrow"><span>Explore Project</span><span>→</span></div>
       </a>
@@ -395,11 +396,11 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
       <a class="project-card reveal rd2" href="#" onclick="openProject('p3',event);return false;">
         <span class="project-number">03</span>
         <div class="building-badge"><span class="building-dot"></span>Currently Building</div>
-        <div class="project-tag">EdTech · GenAI · Agentic AI</div>
-        <h3 class="project-title">AsyncYou — AI-Powered Study Companion</h3>
-        <p class="project-desc">Pure GenAI + Agentic AI. Drop any YouTube URL — AsyncYou converts video to transcript, generates structured notes, builds a study planner, tracks progress, and guides you with an AI agent. 100% autonomous.</p>
+        <div class="project-tag">Full-Stack · Marketplace · AI Agents</div>
+        <h3 class="project-title">DevCollab — Freelancer-Client Collaboration Platform</h3>
+        <p class="project-desc">A marketplace where freelancers and clients scope projects into milestones, chat in real time, track tasks and join 1-to-1 video calls — with milestone-based payments and AI agents for project workflows.</p>
         <div class="project-stack">
-          <span class="stack-tag">LangGraph</span><span class="stack-tag">LangChain</span><span class="stack-tag">RAG</span><span class="stack-tag">n8n</span><span class="stack-tag">VectorDB</span><span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Supabase</span><span class="stack-tag">Razorpay</span><span class="stack-tag">WebRTC</span><span class="stack-tag">Google ADK</span>
         </div>
         <div class="project-arrow"><span>Explore Project</span><span>→</span></div>
       </a>
@@ -423,22 +424,76 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         <h4>Languages & Core</h4>
         <div class="skill-item"><div class="skill-name"><span>Python</span><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="90"></div></div></div>
         <div class="skill-item"><div class="skill-name"><span>HTML / CSS</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="78"></div></div></div>
-        <div class="skill-item"><div class="skill-name"><span>JavaScript</span><span class="skill-pct">65%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="65"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>JavaScript / TypeScript</span><span class="skill-pct">65%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="65"></div></div></div>
         <div class="skill-item"><div class="skill-name"><span>SQL</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="70"></div></div></div>
       </div>
       <div class="skill-group reveal rd1">
         <h4>AI / GenAI / Agentic</h4>
-        <div class="skill-item"><div class="skill-name"><span>LangChain / LangGraph</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="82"></div></div></div>
-        <div class="skill-item"><div class="skill-name"><span>RAG + VectorDB</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>GenAI & LLM Applications</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="82"></div></div></div>
         <div class="skill-item"><div class="skill-name"><span>Agentic AI Systems</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="78"></div></div></div>
-        <div class="skill-item"><div class="skill-name"><span>ML / DL Fundamentals</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="75"></div></div></div>
+        <div class="skill-item"><div class="skill-name"><span>ML / DL Fundamentals (CNN, Transformers)</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar" data-w="75"></div></div></div>
       </div>
       <div class="skill-group reveal rd2">
         <h4>Tools & Platforms</h4>
         <div class="skill-tags">
-          <span class="stag p">VS Code</span><span class="stag t">Jupyter</span><span class="stag p">Git</span><span class="stag t">GitHub</span>
-          <span class="stag g">FastAPI</span><span class="stag p">n8n</span><span class="stag t">VectorDB</span>
+          <span class="stag p">VS Code</span><span class="stag t">Jupyter</span><span class="stag p">Google Colab</span><span class="stag t">Git</span><span class="stag g">GitHub</span>
+          <span class="stag g">FastAPI</span><span class="stag p">Next.js</span><span class="stag t">React</span><span class="stag g">Supabase</span>
+          <span class="stag p">PostgreSQL</span><span class="stag t">Redis</span><span class="stag g">Docker</span><span class="stag p">WebRTC</span><span class="stag t">Razorpay</span>
+          <span class="stag g">OpenAI API</span><span class="stag p">Gemini / Google ADK</span><span class="stag t">n8n</span>
           <span class="stag g">Vibe Coding</span><span class="stag p">AI Agents</span><span class="stag t">Automation</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd3" style="grid-column:1 / -1;">
+        <h4>Core Subjects</h4>
+        <div class="skill-tags">
+          <span class="stag p">DBMS</span><span class="stag t">Operating Systems</span><span class="stag g">Computer Networks</span><span class="stag p">Software Engineering</span><span class="stag t">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="aurora-divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Academic Journey</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cert-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-info">
+          <h4>B.Tech — Computer Science Engineering</h4>
+          <span class="cert-org">Pranveer Singh Institute of Technology, Kanpur</span>
+          <span class="cert-date">2024 – Present</span>
+        </div>
+      </div>
+      <div class="cert-card reveal rd1">
+        <div class="cert-icon">📘</div>
+        <div class="cert-info">
+          <h4>Diploma — Computer Science Engineering</h4>
+          <span class="cert-org">Kanpur Institute of Technology, Kanpur</span>
+          <span class="cert-date">2022 – 2024</span>
+        </div>
+      </div>
+      <div class="cert-card reveal rd2">
+        <div class="cert-icon">🏫</div>
+        <div class="cert-info">
+          <h4>Class XII</h4>
+          <span class="cert-org">Kanpur City Inter College, Kanpur</span>
+          <span class="cert-date">2021 – 2022</span>
+        </div>
+      </div>
+      <div class="cert-card reveal rd3">
+        <div class="cert-icon">🏫</div>
+        <div class="cert-info">
+          <h4>Class X</h4>
+          <span class="cert-org">Kanpur City Inter College, Kanpur</span>
+          <span class="cert-date">2019 – 2020</span>
         </div>
       </div>
     </div>
@@ -455,7 +510,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
       <h2 class="section-title">Certifications</h2>
       <div class="section-line"></div>
     </div>
-    <div class="cert-grid">
+    <div class="cert-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));">
       <div class="cert-card reveal">
         <div class="cert-icon">🧠</div>
         <div class="cert-info">
@@ -465,6 +520,22 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         </div>
       </div>
       <div class="cert-card reveal rd1">
+        <div class="cert-icon">📋</div>
+        <div class="cert-info">
+          <h4>Agile Product Management</h4>
+          <span class="cert-org">Great Learning</span>
+          <span class="cert-date">Completed</span>
+        </div>
+      </div>
+      <div class="cert-card reveal rd2">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <h4>AI Automation using N8N</h4>
+          <span class="cert-org">CampusX</span>
+          <span class="cert-date">Completed</span>
+        </div>
+      </div>
+      <div class="cert-card reveal rd3">
         <div class="cert-icon">🐍</div>
         <div class="cert-info">
           <h4>Python Programming Fundamentals</h4>
@@ -504,12 +575,12 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="contact-grid">
       <div class="contact-info reveal">
         <h3>Let's Build Something</h3>
-        <p>Internships, collaborations, project ideas, or just a conversation about agentic AI and where it's headed — reach out. I'm always building, always curious.</p>
+        <p>SDE and AI/ML roles, collaborations, project ideas, or just a conversation about building AI-powered products — reach out. I'm always building, always curious.</p>
         <div class="social-links">
           <a href="https://github.com/man-ra" target="_blank" class="social-link">GitHub</a>
           <a href="https://www.linkedin.com/in/man-ra-275ab93a6/" target="_blank" class="social-link">LinkedIn</a>
-          <a href= "https://leetcode.com/u/itimantasha/" target="_blank" class="social-link">LeetCode</a>
-          <a href="mailto:YOUR_EMAIL_HERE" class="social-link">Email</a>
+          <a href="https://leetcode.com/u/yMkHzy7kCS/" target="_blank" class="social-link">LeetCode</a>
+          <a href="mailto:itimantasha@gmail.com" class="social-link">Email</a>
         </div>
       </div>
       <div class="contact-form reveal rd2">
@@ -523,7 +594,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 </section>
 
 <footer>
-  <p>Crafted with obsession by <span class="footer-name">Man-Ra</span> &nbsp;·&nbsp; B.Tech CSE 2025–26 &nbsp;·&nbsp; Built to stand apart</p>
+  <p>Crafted with obsession by <span class="footer-name">Man-Ra</span> &nbsp;·&nbsp; B.Tech CSE · Batch 2027 &nbsp;·&nbsp; Built to stand apart</p>
 </footer>
 </div><!-- /main-content -->
 
@@ -536,11 +607,11 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <div class="detail-meta">
     <div class="detail-meta-item"><strong>Status</strong>Completed · Ready to Deploy</div>
     <div class="detail-meta-item"><strong>Domain</strong>Bioinformatics / CNN</div>
-    <div class="detail-meta-item"><strong>Year</strong>2025</div>
+    <div class="detail-meta-item"><strong>Year</strong>Aug – Dec 2025</div>
     <div class="detail-meta-item"><strong>Role</strong>Solo Developer</div>
   </div>
   <div class="project-stack" style="margin-bottom:2rem;">
-    <span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT Architecture</span><span class="stack-tag">Scikit-learn</span><span class="stack-tag">Pandas</span>
+    <span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">TensorFlow</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT Architecture</span><span class="stack-tag">Transformer</span>
   </div>
 
   <div class="video-section">
@@ -577,15 +648,15 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <div class="detail-body">
     <div class="detail-description">
       <h3>Overview</h3>
-      <p>Antibiotic resistance kills 1.3 million people annually. Traditional culture-based diagnostics take 48–72 hours — time that costs lives in critical infections. This project builds a BLT-CNN pipeline that reads raw pathogen genomic sequences and predicts resistance patterns in seconds.</p>
+      <p>Antibiotic resistance kills 1.3 million people annually. Traditional culture-based diagnostics take 24–72 hours — time that costs lives in critical infections. Genora builds a BLT-CNN pipeline that reads raw 300-nucleotide pathogen DNA sequences and predicts resistance patterns in milliseconds, with real-world potential for rapid screening in clinical microbiology.</p>
       <h3>The Problem</h3>
       <p>Without knowing resistance patterns, clinicians prescribe broad-spectrum antibiotics by default — accelerating global resistance. The core question: can we extract resistance signals directly from DNA sequences before any culture result arrives?</p>
       <h3>The Architecture</h3>
-      <p>The pipeline uses a Bidirectional LSTM-Transformer (BLT) architecture combined with a Convolutional Neural Network. Genomic sequences are tokenized, k-mer features are extracted, and fed through the model to produce a multi-class resistance probability vector — one score per antibiotic class.</p>
+      <p>Raw sequences from the CARD database are segmented by an entropy-guided BLT patcher. A 1D CNN captures local sequence motifs while a 4-layer, 8-head Transformer encoder models longer-range context. Both are fused through an MLP into a multi-label sigmoid classifier (~944K parameters) that outputs one resistance probability per antibiotic class.</p>
       <h3>Key Features</h3>
-      <p>End-to-end genome sequence preprocessing. k-mer frequency feature extraction. BLT-CNN hybrid architecture. Multi-label resistance prediction. Resistance heatmap visualization. Modular design supporting multiple pathogen species.</p>
+      <p>Learns directly from raw DNA with no manual feature engineering. Entropy-guided BLT patching. Hybrid 1D CNN + Transformer encoder. Multi-label resistance prediction across Methicillin, Ciprofloxacin and Vancomycin.</p>
       <h3>Results</h3>
-      <p>[Add your accuracy metrics, dataset size, performance benchmarks, and key findings here.]</p>
+      <p>Trained on the CARD database, the model reaches 93.34% accuracy, 98.55% AUC, 94.18% F1, 95.57% precision and 93.35% recall across the three antibiotic classes.</p>
     </div>
     <div class="detail-sidebar">
       <div class="sidebar-card">
@@ -595,7 +666,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
       </div>
       <div class="sidebar-card">
         <h4>Tech Stack</h4>
-        <div class="project-stack" style="margin:0;"><span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT</span></div>
+        <div class="project-stack" style="margin:0;"><span class="stack-tag">Python</span><span class="stack-tag">BioPython</span><span class="stack-tag">TensorFlow</span><span class="stack-tag">CNN</span><span class="stack-tag">BLT</span></div>
       </div>
     </div>
   </div>
@@ -606,16 +677,16 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <div class="detail-page" id="detail-p2">
 <div class="container">
   <button class="detail-back" onclick="closeProject()">← Back to Portfolio</button>
-  <span class="detail-category">Personal Project · Networking & GenAI Agentic AI</span>
-  <h1 class="detail-title">Adaptive Traffic Shaping via Real-Time Network Anomaly Detection</h1>
+  <span class="detail-category">Personal Project · GenAI & Full-Stack SaaS</span>
+  <h1 class="detail-title">ParaFlow AI: End-to-End IntelliScribe Autonomous Text Orchestration System</h1>
   <div class="detail-meta">
-    <div class="detail-meta-item"><strong>Status</strong>In Development</div>
-    <div class="detail-meta-item"><strong>Domain</strong>Networking / GenAI</div>
-    <div class="detail-meta-item"><strong>Year</strong>2025–26</div>
-    <div class="detail-meta-item"><strong>Role</strong>Solo Developer</div>
+    <div class="detail-meta-item"><strong>Status</strong>Completed</div>
+    <div class="detail-meta-item"><strong>Domain</strong>GenAI / SaaS</div>
+    <div class="detail-meta-item"><strong>Year</strong>Apr 2026 – Sep 2026</div>
+    <div class="detail-meta-item"><strong>Role</strong>Developer</div>
   </div>
   <div class="project-stack" style="margin-bottom:2rem;">
-    <span class="stack-tag">Python</span><span class="stack-tag">LangChain</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Scapy</span><span class="stack-tag">VectorDB</span><span class="stack-tag">GenAI</span>
+    <span class="stack-tag">Python</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Next.js</span><span class="stack-tag">OpenAI API</span><span class="stack-tag">Prompt Engineering</span><span class="stack-tag">REST APIs</span><span class="stack-tag">PostgreSQL (Supabase)</span><span class="stack-tag">Redis</span><span class="stack-tag">Docker</span>
   </div>
   <div class="video-section">
     <div class="media-label">▶ &nbsp;Project Demo</div>
@@ -624,24 +695,24 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <div class="gallery-section">
     <div class="media-label">◈ &nbsp;Screenshots</div>
     <div class="gallery-scroll">
-      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">network-anomaly · live dashboard</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/network-1.png</span></div></div>
-      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">network-anomaly · agent reasoning trace</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/network-2.png</span></div></div>
+      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">paraflow-ai · dashboard</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/paraflow-1.png</span></div></div>
+      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">paraflow-ai · content generation</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/paraflow-2.png</span></div></div>
     </div>
   </div>
   <div class="detail-body">
     <div class="detail-description">
       <h3>Overview</h3>
-      <p>Modern networks face anomalous traffic — DDoS attacks, bandwidth abuse, sudden load spikes — that static rule-based firewalls can't handle fast enough. This project builds a GenAI-powered network layer that thinks in real time.</p>
-      <h3>What Makes It GenAI-Based</h3>
-      <p>Unlike traditional ML anomaly detectors, this system uses a LangChain agent with access to network tools. The agent analyzes live traffic patterns, reasons about anomaly severity using an LLM, generates natural-language incident reports, and autonomously triggers adaptive QoS rules — closing the loop without human intervention.</p>
+      <p>ParaFlow AI is an end-to-end AI writing platform. It accepts long prompts (5,000+ characters) and turns them into polished content through writing, rewriting, summarization, translation and grammar correction — all from one production-ready SaaS.</p>
+      <h3>What It Does</h3>
+      <p>Users submit a prompt, choose a task, and get AI-generated content back in 2–10 seconds. The platform maintains persistent user history and tracks usage, so past work stays available and consumption stays visible.</p>
       <h3>Architecture</h3>
-      <p>Real-time packet capture via Scapy. Feature extraction and embedding into VectorDB for pattern memory. LangChain agent with network tool access. FastAPI backend serving adaptive QoS decisions. Live dashboard for traffic visualization and agent reasoning trace.</p>
+      <p>A Next.js frontend talks to a FastAPI backend exposing 15+ REST APIs behind JWT authentication. Prompt-engineered LLM pipelines call the OpenAI API, Redis caches repeated work, PostgreSQL (Supabase) stores history and usage, and the whole system is containerized with Docker for secure cloud deployment.</p>
       <h3>Results</h3>
-      <p>[Add detection accuracy, response latency improvements, test scenarios, and benchmarks here.]</p>
+      <p>Generates high-quality AI content within 2–10 seconds on 5,000+ character prompts, backed by a scalable, production-ready SaaS architecture.</p>
     </div>
     <div class="detail-sidebar">
-      <div class="sidebar-card"><h4>Links</h4><a href="YOUR_DEPLOY_LINK_P2" class="btn-deploy">→ Live Demo</a><a href="https://github.com/man-ra" target="_blank" class="btn-github">⌥ GitHub</a></div>
-      <div class="sidebar-card"><h4>Tech Stack</h4><div class="project-stack" style="margin:0;"><span class="stack-tag">LangChain</span><span class="stack-tag">FastAPI</span><span class="stack-tag">VectorDB</span><span class="stack-tag">Scapy</span></div></div>
+      <div class="sidebar-card"><h4>Links</h4><a href="YOUR_DEPLOY_LINK_P2" class="btn-deploy">→ Live Demo</a><a href="https://github.com/itimantasha/Paraflow-AI" target="_blank" class="btn-github">⌥ GitHub</a></div>
+      <div class="sidebar-card"><h4>Tech Stack</h4><div class="project-stack" style="margin:0;"><span class="stack-tag">FastAPI</span><span class="stack-tag">Next.js</span><span class="stack-tag">OpenAI API</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">Redis</span><span class="stack-tag">Docker</span></div></div>
     </div>
   </div>
 </div>
@@ -651,16 +722,16 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <div class="detail-page" id="detail-p3">
 <div class="container">
   <button class="detail-back" onclick="closeProject()">← Back to Portfolio</button>
-  <span class="detail-category">Personal Project · EdTech · Pure GenAI & Agentic AI</span>
-  <h1 class="detail-title">AsyncYou — AI-Powered Study Companion</h1>
+  <span class="detail-category">Personal Project · Full-Stack · Marketplace · AI Agents</span>
+  <h1 class="detail-title">DevCollab — Freelancer-Client Collaboration Platform</h1>
   <div class="detail-meta">
     <div class="detail-meta-item"><strong>Status</strong>Currently Building 🔨</div>
-    <div class="detail-meta-item"><strong>Domain</strong>EdTech / Agentic AI</div>
-    <div class="detail-meta-item"><strong>Year</strong>2025–26</div>
-    <div class="detail-meta-item"><strong>Role</strong>Solo Developer</div>
+    <div class="detail-meta-item"><strong>Domain</strong>Full-Stack / Marketplace</div>
+    <div class="detail-meta-item"><strong>Year</strong>Sep 2026 – Present</div>
+    <div class="detail-meta-item"><strong>Role</strong>Developer</div>
   </div>
   <div class="project-stack" style="margin-bottom:2rem;">
-    <span class="stack-tag">LangGraph</span><span class="stack-tag">LangChain</span><span class="stack-tag">RAG</span><span class="stack-tag">VectorDB</span><span class="stack-tag">n8n</span><span class="stack-tag">FastAPI</span><span class="stack-tag">YouTube API</span>
+    <span class="stack-tag">Next.js</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Supabase</span><span class="stack-tag">WebRTC</span><span class="stack-tag">Razorpay</span><span class="stack-tag">Google ADK</span><span class="stack-tag">Gemini</span>
   </div>
   <div class="video-section">
     <div class="media-label">▶ &nbsp;Project Demo</div>
@@ -669,27 +740,25 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <div class="gallery-section">
     <div class="media-label">◈ &nbsp;Screenshots</div>
     <div class="gallery-scroll">
-      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">asyncyou.app · dashboard</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/asyncyou-1.png</span></div></div>
-      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">asyncyou.app · notes view</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/asyncyou-2.png</span></div></div>
-      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">asyncyou.app · study planner</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/asyncyou-3.png</span></div></div>
+      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">devcollab · dashboard</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/devcollab-1.png</span></div></div>
+      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">devcollab · project workspace</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/devcollab-2.png</span></div></div>
+      <div class="browser-mock"><div class="browser-bar"><div class="browser-dots"><span></span><span></span><span></span></div><div class="browser-url">devcollab · milestone payments</div></div><div class="browser-placeholder"><span>📁 assets/screenshots/devcollab-3.png</span></div></div>
     </div>
   </div>
   <div class="detail-body">
     <div class="detail-description">
-      <h3>The Problem</h3>
-      <p>Millions of students learn from YouTube daily — but the platform was built for entertainment, not education. There's no structured output, no retention mechanism, no progress tracking. You watch, you forget.</p>
-      <h3>The Vision</h3>
-      <p>AsyncYou is a purely GenAI and agentic AI system — not just an AI feature bolted onto a study app, but an AI agent that orchestrates your entire learning workflow. Drop any YouTube URL and the agent takes over completely.</p>
+      <h3>Overview</h3>
+      <p>DevCollab is a collaboration platform where freelancers and clients find each other, break projects into milestones, chat, track tasks and jump on video calls — with payments held against milestones until the work is approved.</p>
       <h3>What It Does</h3>
-      <p>Extracts transcripts from any YouTube video. Uses RAG + LangGraph agents to generate structured, topic-organized notes. Creates summaries at multiple depth levels. Builds a personalized study planner. Tracks progress across videos and topics. Sends reminders via n8n automation. Provides an AI guide you can ask questions about any processed video.</p>
-      <h3>Why Agentic</h3>
-      <p>The system uses LangGraph to build a multi-step reasoning agent — not a single prompt, but a graph of nodes that plan, retrieve, generate, and verify. VectorDB stores all processed content for long-term RAG retrieval. n8n handles the automation backbone for reminders and digests.</p>
+      <p>A marketplace and dashboard for projects. Milestone-based payments through Razorpay with webhook-verified payment states. Real-time chat and presence. Task tracking per project. Peer-to-peer 1-to-1 video and audio calls over WebRTC. Google ADK agents powered by Gemini for AI-assisted project workflows.</p>
+      <h3>Architecture</h3>
+      <p>A Next.js + TypeScript + Tailwind frontend and a FastAPI backend that verifies Supabase-issued JWTs. Supabase provides PostgreSQL with row-level security, Auth, Storage and Realtime — Realtime channels also carry the WebRTC signaling.</p>
       <h3>Current Status</h3>
-      <p>[Update with your current build progress, what's working, what's next, and your ship date.]</p>
+      <p>In active development (Sep 2026 – Present), built in phases. The demo and repository will be linked here once the core flow is live.</p>
     </div>
     <div class="detail-sidebar">
       <div class="sidebar-card"><h4>Links</h4><a href="#" class="btn-deploy" style="opacity:0.5;pointer-events:none;">→ Coming Soon</a><a href="https://github.com/man-ra" target="_blank" class="btn-github">⌥ GitHub</a></div>
-      <div class="sidebar-card"><h4>Tech Stack</h4><div class="project-stack" style="margin:0;"><span class="stack-tag">LangGraph</span><span class="stack-tag">RAG</span><span class="stack-tag">n8n</span><span class="stack-tag">VectorDB</span></div></div>
+      <div class="sidebar-card"><h4>Tech Stack</h4><div class="project-stack" style="margin:0;"><span class="stack-tag">Next.js</span><span class="stack-tag">FastAPI</span><span class="stack-tag">Supabase</span><span class="stack-tag">WebRTC</span><span class="stack-tag">Razorpay</span><span class="stack-tag">Google ADK</span></div></div>
     </div>
   </div>
 </div>
@@ -796,7 +865,7 @@ document.addEventListener('click',e=>{for(let i=0;i<14;i++)setTimeout(()=>spk(e.
 })();
 
 // ══ TYPEWRITER ══
-const phrases=['Building GenAI Systems.','LangChain · LangGraph · RAG.','Agentic AI Engineer.','Antibiotic Resistance Predictor.','AsyncYou — Study Smarter.','Open to Internships.'];
+const phrases=['Building GenAI Systems.','FastAPI · Next.js · Supabase.','Full-Stack AI Developer.','Antibiotic Resistance Predictor.','ParaFlow AI — Text Orchestration.','DevCollab — In the Works.','Open to SDE & AI/ML Roles.'];
 let pi=0,ci=0,del=false;
 function type(){
   const el=document.getElementById('typewriter');if(!el)return;
